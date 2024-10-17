@@ -65,7 +65,7 @@ class _ContinueState extends State<Continue> {
               ),
             ),
             SizedBox(
-              height: 30.0,
+              height: 50.0,
             ),
             GestureDetector(
               onTap: () {
