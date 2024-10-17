@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:quiz_app/pages/continuing.dart';
 import 'package:quiz_app/pages/home.dart';
+import 'package:quiz_app/pages/questions.dart';
 
 void main() {
   runApp(const MyApp());
@@ -33,6 +35,8 @@ class MyApp extends StatelessWidget {
         useMaterial3: true,
       ),
       home: Login());
+      // home: Continue() );
+      // home: Question() );
   }
 }
 

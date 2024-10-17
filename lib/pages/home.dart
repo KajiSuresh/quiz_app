@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:quiz_app/pages/continuing.dart';
 
 class Login extends StatefulWidget {
   const Login({super.key});
@@ -167,14 +168,19 @@ class _LoginState extends State<Login> {
                           SizedBox(
                             height: 5.0,
                           ),
-                          Container(
-                            padding: EdgeInsets.all(5),
-                            decoration: BoxDecoration(
-                                border: Border.all(color: Colors.white54),
-                                borderRadius: BorderRadius.circular(10)),
-                            child: Icon(
-                              Icons.play_arrow,
-                              color: Colors.white,
+                          GestureDetector(
+                            onTap: () {
+                              Navigator.push(context, MaterialPageRoute(builder: (context)=> Continue()));
+                            },
+                            child: Container(
+                              padding: EdgeInsets.all(5),
+                              decoration: BoxDecoration(
+                                  border: Border.all(color: Colors.white54),
+                                  borderRadius: BorderRadius.circular(10)),
+                              child: Icon(
+                                Icons.play_arrow,
+                                color: Colors.white,
+                              ),
                             ),
                           ),
                           SizedBox(
