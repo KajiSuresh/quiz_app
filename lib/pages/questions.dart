@@ -76,7 +76,9 @@ class _QuestionState extends State<Question> {
               ],
             ),
             Image.asset("images/ships.png"),
-            SizedBox(height: 30.0,),
+            SizedBox(
+              height: 30.0,
+            ),
             Text(
               "Question 5 of 10",
               style: TextStyle(
@@ -91,52 +93,72 @@ class _QuestionState extends State<Question> {
                   fontSize: 28.0,
                   fontWeight: FontWeight.bold),
             ),
-            SizedBox(height: 40.0,),
-            Container(
-              padding: EdgeInsetsDirectional.symmetric(vertical: 10.0),
-              width: MediaQuery.of(context).size.width,
-              decoration: BoxDecoration(color: Colors.white , borderRadius: BorderRadius.circular(15.0)),
-              child:  Center(
-                child: Text(
-                "Bremen",
-                style: TextStyle(
-                    color:  Color(0xff4183f1),
-                    fontSize: 24.0,
-                    fontWeight: FontWeight.bold),
-                            ),
-              ),
-              ),
-               SizedBox(height: 20.0,),
-            Container(
-              padding: EdgeInsetsDirectional.symmetric(vertical: 10.0),
-              width: MediaQuery.of(context).size.width,
-              decoration: BoxDecoration(color: Color(0xffdbcf02) , borderRadius: BorderRadius.circular(15.0)),
-              child:  Row(
-               
-                children: [ 
-                  SizedBox(width: MediaQuery.of(context).size.width/3.2),
-                  Text("Hamburg", style: TextStyle(color: Colors.white, fontSize: 24.0, fontWeight: FontWeight.bold),),
-               Spacer(),
-                Padding(
-                  padding: const EdgeInsets.only(right: 20.0),
-                  child: Icon(Icons.done, color: Colors.white, size: 40.0,),
-                )
-                 ],
-              )
+            SizedBox(
+              height: 40.0,
             ),
-             SizedBox(height: 20.0,),
             Container(
               padding: EdgeInsetsDirectional.symmetric(vertical: 10.0),
               width: MediaQuery.of(context).size.width,
-              decoration: BoxDecoration(color: Colors.white , borderRadius: BorderRadius.circular(15.0)),
-              child:  Center(
+              decoration: BoxDecoration(
+                  color: Colors.white,
+                  borderRadius: BorderRadius.circular(15.0)),
+              child: Center(
                 child: Text(
-                "Hasse",
-                style: TextStyle(
-                    color:  Color(0xff4183f1),
-                    fontSize: 24.0,
-                    fontWeight: FontWeight.bold),
-                            ),
+                  "Bremen",
+                  style: TextStyle(
+                      color: Color(0xff4183f1),
+                      fontSize: 24.0,
+                      fontWeight: FontWeight.bold),
+                ),
+              ),
+            ),
+            SizedBox(
+              height: 20.0,
+            ),
+            Container(
+                padding: EdgeInsetsDirectional.symmetric(vertical: 10.0),
+                width: MediaQuery.of(context).size.width,
+                decoration: BoxDecoration(
+                    color: Color(0xffdbcf02),
+                    borderRadius: BorderRadius.circular(15.0)),
+                child: Row(
+                  children: [
+                    SizedBox(width: MediaQuery.of(context).size.width / 3.2),
+                    Text(
+                      "Hamburg",
+                      style: TextStyle(
+                          color: Colors.white,
+                          fontSize: 24.0,
+                          fontWeight: FontWeight.bold),
+                    ),
+                    Spacer(),
+                    Padding(
+                      padding: const EdgeInsets.only(right: 20.0),
+                      child: Icon(
+                        Icons.done,
+                        color: Colors.white,
+                        size: 40.0,
+                      ),
+                    )
+                  ],
+                )),
+            SizedBox(
+              height: 20.0,
+            ),
+            Container(
+              padding: EdgeInsetsDirectional.symmetric(vertical: 10.0),
+              width: MediaQuery.of(context).size.width,
+              decoration: BoxDecoration(
+                  color: Colors.white,
+                  borderRadius: BorderRadius.circular(15.0)),
+              child: Center(
+                child: Text(
+                  "Hasse",
+                  style: TextStyle(
+                      color: Color(0xff4183f1),
+                      fontSize: 24.0,
+                      fontWeight: FontWeight.bold),
+                ),
               ),
             )
           ],

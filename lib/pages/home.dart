@@ -140,8 +140,10 @@ class _LoginState extends State<Login> {
                 ),
               ],
             ),
-            SizedBox(height: 30.0,),
-             Stack(
+            SizedBox(
+              height: 30.0,
+            ),
+            Stack(
               children: [
                 Container(
                   margin: EdgeInsets.only(top: 50.0),
@@ -170,7 +172,10 @@ class _LoginState extends State<Login> {
                           ),
                           GestureDetector(
                             onTap: () {
-                              Navigator.push(context, MaterialPageRoute(builder: (context)=> Continue()));
+                              Navigator.push(
+                                  context,
+                                  MaterialPageRoute(
+                                      builder: (context) => Continue()));
                             },
                             child: Container(
                               padding: EdgeInsets.all(5),
@@ -221,8 +226,10 @@ class _LoginState extends State<Login> {
                 ),
               ],
             ),
-            SizedBox(height: 30.0,),
-             Stack(
+            SizedBox(
+              height: 30.0,
+            ),
+            Stack(
               children: [
                 Container(
                   margin: EdgeInsets.only(top: 50.0),
@@ -297,8 +304,6 @@ class _LoginState extends State<Login> {
                 ),
               ],
             ),
-
-            
           ],
         ),
       ),

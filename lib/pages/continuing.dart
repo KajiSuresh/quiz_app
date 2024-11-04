@@ -69,7 +69,8 @@ class _ContinueState extends State<Continue> {
             ),
             GestureDetector(
               onTap: () {
-               Navigator.push(context, MaterialPageRoute(builder: (context)=> Question())); 
+                Navigator.push(context,
+                    MaterialPageRoute(builder: (context) => Question()));
               },
               child: Container(
                 margin: EdgeInsets.only(right: 20.0),
